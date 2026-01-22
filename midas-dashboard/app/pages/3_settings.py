@@ -1,16 +1,21 @@
 """Settings page."""
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
 import streamlit as st
 
 from app.core import settings
 
 st.set_page_config(
     page_title="Settings - Midas",
-    page_icon="⚙️",
+    page_icon=None,
     layout="wide",
 )
 
-st.title("⚙️ Settings")
+st.title("Settings")
 st.markdown("---")
 
 # API Settings

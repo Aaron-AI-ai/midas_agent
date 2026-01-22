@@ -21,7 +21,7 @@ class Settings(BaseSettings):
 
     # Streamlit Settings
     page_title: str = "Midas Dashboard"
-    page_icon: str = "📊"
+    page_icon: str | None = None
 
 
 settings = Settings()
